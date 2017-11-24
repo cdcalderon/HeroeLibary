@@ -1,8 +1,14 @@
+body {
+  padding-bottom: 70px;
+}
+
 .main-container {
   margin-top: 20px;
 }
 
-
+.img-logo {
+  width: 120px;
+}
     /* animations */
 
 .animated {
@@ -22,6 +28,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+
   }
 
   to {
@@ -32,3 +39,5 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+

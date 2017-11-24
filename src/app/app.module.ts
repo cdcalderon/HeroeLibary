@@ -11,6 +11,13 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroDetailsComponent } from './components/heroes/hero-details/hero-details.component';
+import { SearchComponent } from './components/search/search.component';
+
+// Services
+import { HeroesService } from './services/heroes.service';
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +25,15 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [HeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
